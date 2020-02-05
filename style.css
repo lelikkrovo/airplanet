@@ -76,14 +76,11 @@ img {
   min-width: 1100px;
 }
 
-.sidebar, .content  {
+/* .sidebar, .content  {
   display: inline-block;
   vertical-align: top;
-}
+} */
 
-.content {
-  width: 866px;
-}
 
 .sidebar {
   width: 230px;
@@ -170,6 +167,7 @@ img {
 .tariffs__title {
   font-size: 11px;
   text-transform: uppercase;
+  
 }
 
 .tariffs__cost {
@@ -204,24 +202,40 @@ img {
   transform: translate(-50%, -50%);
 }
 
+/* бордер в тарифы */
 .tariffs__item-border {
   border: 2px solid #e8e8ec;
+  width: 250px;
+  height: 450px;
+  padding-top: 40px;
 }
 
-.latestnews__avatar{
+.latestnews__avatar, .latestnews__content{
   display: inline-block;
 }
 
 .latestnews__content {
-  display: inline-block;
   text-align: left;
   width: 644px;
   height: 164px;
 }
-    
-.pagination__display, .pagination__link, .pagination__item, .pagination__controlls {
+
+
+
+.tariffs__content-ul {
+  list-style-type: circle ;
+}
+
+/* pagination */
+
+.pagination {
+  /* display: inline; */
+  margin: 0 auto;
+}
+
+.pagination__item, .pagination__display, .pagination__controlls, .pagination__list, .pagination__link, .pagination__lef, .pagination__right  {
   display: inline-block;
-  vertical-align: middle;
+  margin: 0 auto;
 }
 
 
@@ -232,51 +246,32 @@ img {
   color: white;
 }
 
-.socials {
-  position: absolute;
-  top: 18px;
-  right: 0;
+.copyright, .logo-footer, .socials{
+  display: inline-block;
+  width: 33%;
 }
 
-.copyright {
-  display: inline-block;
-  text-align: left;
-  width: 300px;
-  height: 50px;
-}
 
-/* .logo123 {
-  display: inline-block;
-  text-align: start;
-} */
-
+/* Иконка в иконке соц. сеть */
 .socials__item {
   display: inline-block;
-  vertical-align: middle;
-}
-
-.socials__item:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.socials__item {
   position: relative;
+  width: 20px;
   height: 20px;
-  widows: 20px;
-
 }
 
 .socials__avatar-img {
   position: absolute;
   width: 13px;
-  height: 13px;
+  height: 9px;
   top: 50%;
   left: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(-50%, -50%);
 }
 
 
+
+
+/* ховер течт */
 
 
