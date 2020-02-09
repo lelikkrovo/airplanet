@@ -84,7 +84,7 @@ img {
 
 
 .sidebar {
-  width: 230px;
+  width: 220px;
 }
 
 .airplane__cover-pic {
@@ -365,7 +365,7 @@ hr {
 
 
 .footer__col_last {
-  padding: 0px 0px 0px 170px;
+  padding: 0px 0px 0px 120px;
 }
 
 .footer__col_mid {
@@ -378,6 +378,8 @@ hr {
   position: relative;
   width: 20px;
   height: 20px;
+  background: #d4ddf2;
+  border-radius: 50%;
 }
 
 .socials__avatar-img {
@@ -387,6 +389,9 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+.socials__item:hover {
+  background: white; 
+}
 
 
 .tariffs__content-ul-mod {
@@ -397,54 +402,18 @@ hr {
   padding-left: 25px;
 }
 
+/* последнии новости border */
 
-/* тест иконок соцсетей*/
-/* .socials__link:before {
-  content: "";
-  display: inline-block;
-  margin-right: 13px;
-  width: 23px;
-  height: 18px;
-  background: left center / contain no-repeat;
+.latestnews__item {
+  border-bottom: 1px solid #ccc;
+  padding-top: 25px;
+}
+
+.latestnews__item:last-child {
+  border:none;
 }
 
 
-.menu__item--active .socials__link {
-  color: black;
-}
 
-.socials__item--icon--vkontakte .socials__link:before {
-  background-image: url('./img/icons/social/vk.png');
-}
 
-.socials__item--icon--vkontakte .socials__link:hover:before {
-  background-image: url('./img/icons/menu/main-hover.png');
-}
 
-.socials__item--icon--facebook .socials__link:before {
-  background-image: url('./img/icons/menu/feed.png');
-}
-
-.socials__item--icon--facebook .socials__link:hover:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
-}
-
-.socials__item--icon--twitter .socials__link:before {
-  background-image: url('./img/icons/menu/team.png');
-}
-
-.socials__item--icon--vkontakte .socials__link:hover:before {
-  background-image: url('./img/icons/menu/team-hover.png');
-}
-
-.menu__item--active.menu__item--icon--main .socials__link:before {
-  background-image: url('./img/icons/menu/main-hover.png');
-}
-
-.menu__item--active.menu__item--icon--feed .socials__link:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
-}
-
-.menu__item--active.menu__item--icon--team .socials__link:before {
-  background-image: url('./img/icons/menu/team-hover.png');
-} */
