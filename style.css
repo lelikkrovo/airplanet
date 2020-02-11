@@ -103,6 +103,10 @@ img {
   margin-bottom: 15px;
 }
 
+.menu__item:last-child {
+  margin-bottom: 0px;
+}
+
 .menu__link {
   color: #5972b1;
   font-size: 12px;
@@ -193,16 +197,21 @@ img {
   margin-bottom: 70px;
 }
 
+/* .tariffs__list {
+  padding-top: 40px;
+} */
 
 .tariffs__item {
+  /* vertical-align: middle; */
   border: 1px solid transparent;
-  padding-top: 46px;
   height: 460px;
   width: 250px;
+  padding-top: 40px;
 }
 
 .tariffs__item:hover {
   border: 1px solid #e8e8ec;
+  height: 460px;
   
 }
 
@@ -269,8 +278,8 @@ img {
 
 .latestnews__item:last-child {
   border:none;
+  margin-bottom: 0px;
 }
-
 
 
 .latestnews__content {
@@ -431,5 +440,3 @@ img {
   display: block;
   height: 100%;
 }
-
-
