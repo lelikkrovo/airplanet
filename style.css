@@ -209,6 +209,7 @@ img {
 .tariffs__item {
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
 }  
 
 
@@ -426,19 +427,9 @@ img {
   background: white; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.socials__link {
+  display: block;
+  height: 100%;
+}
 
 
