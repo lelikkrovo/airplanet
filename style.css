@@ -194,10 +194,16 @@ img {
 }
 
 
+.tariffs__item {
+  border: 1px solid transparent;
+  padding-top: 46px;
+  height: 460px;
+  width: 250px;
+}
+
 .tariffs__item:hover {
   border: 1px solid #e8e8ec;
-  /* height: 460px;
-  width: 250px; */
+  
 }
 
 .tariffs__item {
@@ -228,6 +234,9 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.tariffs__content-ul-mod {
+  list-style: disc;
+}
 
 
 /* отступ текста от картинки */
@@ -418,9 +427,7 @@ img {
 }
 
 
-.tariffs__content-ul-mod {
-  list-style: disc;
-}
+
 
 
 
