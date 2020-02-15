@@ -181,6 +181,14 @@ img {
   font-size: 49px;
 }
 
+.text__autor {
+  font-weight: 700;
+}
+
+.copyright__link {
+  color: inherit;
+}
+
 .tariffs__title {
   font-size: 11px;
   text-transform: uppercase;
