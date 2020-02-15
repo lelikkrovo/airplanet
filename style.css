@@ -11,10 +11,6 @@ ul {
   list-style: none;
 }
 
-ul li {
-  list-style: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -23,38 +19,17 @@ img {
   display: block;
   max-width: 100%;
 }
-
+/* header */
 .header {
+  display: flex;
+  flex-direction: row;
   background: #5973b1;
   color: white;
-  margin-bottom: 13px;
+  min-height: 77px;
+  margin-bottom: 42px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1100px;
-  position: relative;
-}
-
-.header__container {
-  height: 77px;
-}
-
- 
-
-.logo {
-  position: absolute;
-  top: 10px;
-  left: 0;
-}
-
-.contacts {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  text-align: right;
-}
-
+/* номер телефона стилизация */
 .contacts__phone {
   color: inherit;
   font-size: 21px;
@@ -63,32 +38,57 @@ img {
 }
 
 .contacts__workhours {
+  text-align: right;
+  text-decoration: underline;
   font-size: 14px;
   font-weight: 700;
   opacity: .7;
 }
 
-.menu__list {
-  margin: 0;
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
 }
 
-.wrapper {
-  overflow: hidden;
-  min-width: 1100px;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-top: 15px;
 }
 
-.sidebar, .content  {
-  display: inline-block;
-  vertical-align: top;
+
+/* main */
+.main__container {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; */
 }
 
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-left: 75px;
+}
 
 .sidebar {
-  width: 220px;
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 300px; */
 }
 
 .airplane__cover-pic {
   display: block;
+}
+
+
+.latestnews {
+  margin-bottom: 50px;
 }
 
 .latestnews__avatar-frame {
@@ -120,12 +120,17 @@ img {
 }
 
 .menu__link:before {
+  display: flex;
   content: "";
-  display: inline-block;
   margin-right: 13px;
   width: 23px;
   height: 18px;
   background: left center / contain no-repeat;
+}
+
+.menu__link {
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -176,6 +181,14 @@ img {
   font-size: 49px;
 }
 
+.text__autor {
+  font-weight: 700;
+}
+
+.copyright__link {
+  color: inherit;
+}
+
 .tariffs__title {
   font-size: 11px;
   text-transform: uppercase;
@@ -197,51 +210,51 @@ img {
   margin-bottom: 70px;
 }
 
-/* .tariffs__list {
-  padding-top: 40px;
-} */
 
 .tariffs__item {
-  /* vertical-align: middle; */
   border: 1px solid transparent;
-  height: 460px;
-  width: 250px;
   padding-top: 40px;
 }
 
 .tariffs__item:hover {
   border: 1px solid #e8e8ec;
-  height: 460px;
-  
+  /* height: 460px; */
 }
 
 .tariffs__item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-}  
+  width: 33%;
+}
+
+.tariffs__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.tariffs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tariffs__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
 
 /* Тарифы */
 
 .tariffs__avatar {
-  display: block;
-  display: inline-block;
-  position: relative;
+  display: flex;
   width: 68px;
   height: 68px;
   background: #5972b1;
   border-radius: 50%;
-}
-
-.tariffs__avatar-mini {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
 }
 
 .tariffs__content-ul-mod {
@@ -254,9 +267,9 @@ img {
   padding-left: 10px;
 }
 
-.latestnews__avatar, .latestnews__content{
+/* .latestnews__avatar, .latestnews__content{
   display: inline-block;
-}
+} */
 
 .latestnews__item {
   border: 1px solid #f9f9f9;
@@ -264,28 +277,7 @@ img {
   
 }
 
-/* отступы междуновостями */
-.latestnews__content {
-  margin-bottom: 30px;
-}
 
-/* последнии новости border */
-
-.latestnews__item {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-
-.latestnews__item:last-child {
-  border:none;
-  margin-bottom: 0px;
-}
-
-
-.latestnews__content {
-  width: 644px;
-  height: 164px;
-}
 
 /* стилизация маркировка */
  .tariffs__content-ul {
@@ -309,57 +301,25 @@ img {
   font-size: 30px;
 }
 
-
-
 /* pagination */
-.pagination {
-  text-align: center;
-  margin: 29px
-}
-
-
-.pagination__item, .pagination__display, .pagination__controlls, .pagination__list, .pagination__link, .pagination__left, .pagination__right  {
-  display: inline-block;
-  text-decoration: none;
-}
-  
+/* .pagination {
+  margin-bottom: 65px;
+} */
 .pagination__title {
-  display: inline-block;
-  vertical-align: middle;
   font-size: 14px;
   color: #7c7b7b;
   margin-right: 18px;
 }
-
 .pagination__btn {
-  display: inline-block;
   text-decoration: none;
-  vertical-align: middle;
   color: #221f1f;
 }
-
-.pagination__btn_prev {
+.pagination__btn_prev, .pagination__btn_next {
   margin-right: 9px;
 }
-
-.pagination__btn_next {
-  margin-left: 9px;
-}
-
 .pagination__btn_active {
   color: #bebdbd;
 }
-
-.pagination__list {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.pagination__item {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .pagination__link {
   text-decoration: none;
   width: 25px;
@@ -371,17 +331,20 @@ img {
   color: #221f1f;
   transition: .3s;
 }
-
 .pagination__link:hover {
   color: #ffffff;
   background-color: #5972b1;
   border-radius: 3px;
 }
-
 .pagination__item_active .pagination__link {
   color: #ffffff;
   background-color: #5972b1;
   border-radius: 3px;
+}
+.pagination__list, .pagination__controlls, .pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
@@ -390,53 +353,100 @@ img {
 }
 
 
-/* footer */
 
+/* footer */
 .footer {
+  display: flex;
+  flex-direction: row;
   background: #5973b1;
   color: white;
-  padding: 10px 0;
+  /* min-height: 77px; */
 }
-
-/* выравнивание элементов футера */
-.footer__col_first, .footer__col_mid, .footer__col_last, .logo-footer{
-  display: inline-block;
-  width: 33%;
-}
-
+.footer__container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}  */
 
 
-.footer__col_last {
-  padding: 0px 0px 0px 120px;
-}
 
-.footer__col_mid {
-  text-align: center;
+
+
+/* footer */
+.footer__container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Иконка в иконке соц. сеть */
-.socials__item {
-  display: inline-block;
-  position: relative;
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   background: #d4ddf2;
   border-radius: 50%;
-  margin-left: 10px;
 }
 
-.socials__avatar-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.socials__item:hover {
+.socials__link:hover {
   background: white; 
 }
 
-.socials__link {
-  display: block;
-  height: 100%;
+
+.socials__list {
+  display: flex;
+  align-content: space-between;
 }
+
+.socials__list {
+  vertical-align: top;
+}
+
+.socials__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.socials__item {
+  margin-left: 10px;
+}
+
+.socials__item:first-child {
+  margin-left: 0px;
+}
+
+/* Последние новости */
+.latestnews__item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.latestnews__item {
+  display: flex;
+  flex-direction: row;
+}
+.latestnews__item:last-child {
+  border:none;
+}
+.latestnews__content {
+  margin-bottom: 30px;
+}
+.latestnews__item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.latestnews__item:last-child {
+  border:none;
+  margin-bottom: 0px;
+}
+.latestnews__content {
+  width: 644px;
+  height: 164px;
+}
+
+
+
+/* ========== */
+
+
