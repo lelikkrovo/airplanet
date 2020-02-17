@@ -66,9 +66,9 @@ img {
   /* flex-direction: row; */
 }
 
-.contant {
+/* .contant {
   flex: 1;
-}
+} */
 
 .contant {
   display: flex;
@@ -173,39 +173,39 @@ img {
 }
 
 .menu__item--icon--main .menu__link:before {
-  background-image: url('./img/icons/menu/main.png');
+  background: url('./img/icons/menu/sprite.png') -96px -48px;
 }
 
 .menu__item--icon--main .menu__link:hover:before {
-  background-image: url('./img/icons/menu/main-hover.png');
+  background: url('./img/icons/menu/sprite.png') -96px -10px;
 }
 
 .menu__item--icon--feed .menu__link:before {
-  background-image: url('./img/icons/menu/feed.png');
+  background: url('./img/icons/menu/sprite.png') -10px -48px;
 }
 
 .menu__item--icon--feed .menu__link:hover:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
+  background: url('./img/icons/menu/sprite.png') -50px -48px;
 }
 
 .menu__item--icon--team .menu__link:before {
-  background-image: url('./img/icons/menu/team.png');
+  background: url('./img/icons/menu/sprite.png') -10px -10px;
 }
 
 .menu__item--icon--team .menu__link:hover:before {
-  background-image: url('./img/icons/menu/team-hover.png');
+  background: url('./img/icons/menu/sprite.png') -53px -10px;
 }
 
 .menu__item--active.menu__item--icon--main .menu__link:before {
-  background-image: url('./img/icons/menu/main-hover.png');
+  background: url('./img/icons/menu/sprite.png') -96px -10px;
 }
 
 .menu__item--active.menu__item--icon--feed .menu__link:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
+  background: url('./img/icons/menu/sprite.png') -50px -48px;
 }
 
 .menu__item--active.menu__item--icon--team .menu__link:before {
-  background-image: url('./img/icons/menu/team-hover.png');
+  background: url('./img/icons/menu/sprite.png') -53px -10px;
 }
 
 
@@ -378,20 +378,16 @@ img {
 
 
 /* partners */
-.partners__list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* margin-bottom: 50px; */
-}
-
 .partners__image {
   display: flex;
 }
 
 .partners__item {
   display: flex;
-  width: 30%;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
 }
 
 .partners__item {
@@ -407,6 +403,8 @@ img {
 .partners__avatar:hover {
   filter: grayscale(0);
 }
+
+
 
 
 

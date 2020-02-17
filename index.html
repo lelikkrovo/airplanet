@@ -10,10 +10,13 @@
   
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/addition.css">
-</link>
+  <link rel="stylesheet" href="addition.css">
+  <link rel="stylesheet" href="/css/layout/normalize.css">
+
+
+    
+</head>
 
 <body>
   <div class="wrapper">
@@ -28,46 +31,32 @@
           <div class="header__right">
             <address class="contacts">
               <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-              <div class="contacts__workhours">График работы</div> 
+              <!-- <div class="contacts__workhours">График работы</div>  -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown__link">График работы</a>
+                  <div class="dropdown__menu">
+                    <p class="time1">
+                      пн-вс: 09:00-20:00
+                    </p>
+                    <p class="time2">
+                      обед: 14:00-14:30
+                    </p>
+                  </div>
+                </div>
             </address>
           </div>
         </div>
       </header>
       <main class="main">
-        <div class="container container__flex">
+        <div class="container main__container">
           <aside class="sidebar">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item menu__item--icon--main menu__item--active">
-                  <a href="./index.html" class="menu__link">Главная</a>
-                </li>
-                <li class="menu__item menu__item--icon--feed ">
-                  <a href="./reviews.html" class="menu__link">Отзывы</a>
-                </li>
-                <li class="menu__item menu__item--icon--team">
-                  <a href="./team.html" class="menu__link">Экипаж</a>
-                </li>
-              </ul>
-            </nav>
-            
-          </aside>
-          <div class="content">
-            
-            <div class="airplane">
-              <div class="airplane__cover">
-                <img src="./img/decor/airplane.png" class="airplane__cover-pic" alt="img-airplane">
-              </div>
-            </div>
             
             <section class="tariffs">
-              <h2 class="title title__margin">Тарифы</h2>  
+              <h3 class="tariffs__title title__margin">Топ-тариф</h3>  
                 <ul class="tariffs__list">
                   <li class="tariffs__item">
-                    <div class="tariffs__avatar">
-                      <img src="img\icons\tariffs\flower.png" class="tariffs__avatar-mini" alt="img">
-                    </div>
                     <div class="tariffs__content">
-                      <h3 class="tariffs__title">Стандарт</h3>
+                      <h4 class="tariffs__name">Стандарт</h4>
                       <p class="tariffs__text">
                         Создан для вашего комфортного отдыха
                       </p>
@@ -94,73 +83,57 @@
                       19
                     </p>
                   </li>
-                  <li class="tariffs__item">
-                    <div class="tariffs__avatar">
-                      <img src="img\icons\tariffs\star.png" class="tariffs__avatar-mini" alt="img">
-                    </div>
-                    <div class="tariffs__content">
-                      <h3 class="tariffs__title">Премиум</h3>
-                      <p class="tariffs__text">
-                        Для любителей хороших впечатлений
-                      </p>
-                      <ul class="tariffs__content-ul">
-                        <li class="tariffs__content-ul-mod">
-                          <p class="tariffs__content-ul-txt">
-                            Питание
-                          </p>
-                        </li>
-                        <li class="tariffs__content-ul-mod">
-                          <p class="tariffs__content-ul-txt">
-                            Багаж (5 кг)
-                          </p> 
-                        </li>
-                        <li class="tariffs__content-ul-mod">
-                          <p class="tariffs__content-ul-txt">
-                            Детское кресло
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="tariffs__cost">
-                      <span class="tariffs__cost-mod">$</span>
-                      39
-                    </p>
-                  </li>
-                  <li class="tariffs__item">
-                    <div class="tariffs__avatar">
-                      <img src="img\icons\tariffs\palette.png" class="tariffs__avatar-mini" alt="img">
-                    </div>
-                    <div class="tariffs__content">
-                      <h3 class="tariffs__title">Лакшери</h3>
-                      <p class="tariffs__text">
-                        Всё самое лучшее и незабываемое  
-                      </p>
-                      <ul class="tariffs__content-ul">
-                        <li class="tariffs__content-ul-mod">
-                          <p class="tariffs__content-ul-txt">
-                            Питание включено
-                          </p>
-                        </li>
-                        <li class="tariffs__content-ul-mod">
-                          <p class="tariffs__content-ul-txt">
-                            Багаж (5 кг)
-                          </p>
-                        </li>
-                        <li class="tariffs__content-ul-mod">
-                          <p class="tariffs__content-ul-txt">
-                            Детское кресло
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="tariffs__cost">
-                      <span class="tariffs__cost-mod">$</span>
-                      99
-                    </p>
-                  </li>
                 </ul>
             </section>
-    
+            <div class="socials">
+              <h4 class="socials__title">Наши социальные сети</h4>
+              <ul class="socials__list">
+                <li class="socials__item socials__item--icon--vkontakte ">
+                  <a href="#" class="socials__link">
+                      <img src=".\img\icons\social\vk.png" class="socials__avatar-img" alt="icon-vk">
+                  </a>
+                </li>
+                <li class="socials__item socials__item--icon--facebook">
+                  <a href="#" class="socials__link">
+                    <img src=".\img\icons\social\fb.png" class="socials__avatar-img" alt="icon-fb">
+                  </a>
+                </li>
+                <li class="socials__item socials__item--icon--twitter">
+                  <a href="#" class="socials__link">
+                    <img src=".\img\icons\social\tw.png" class="socials__avatar-img" alt="icon-tw">
+                  </a>
+                </li>
+                <li class="socials__item socials__item--icon--mail">
+                    <a href="#" class="socials__link">
+                      <img src=".\img\icons\social\em.png" class="socials__avatar-img" alt="icon-em">
+                    </a>
+                </li>
+              </ul>
+            
+            </div>
+          </aside>
+          
+          
+          <div class="content">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--icon--main menu__item--active">
+                  <a href="./index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item menu__item--icon--feed ">
+                  <a href="./reviews.html" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item menu__item--icon--team">
+                  <a href="./team.html" class="menu__link">Экипаж</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="airplane">
+              <div class="airplane__cover">
+                <img src="./img/decor/airplane.png" class="airplane__cover-pic" alt="img-airplane">
+              </div>
+            </div>
+            
             <section class="latestnews">
               <h2 class="title">Последние новости</h2>  
               <ul class="latestnews__list">
@@ -176,7 +149,7 @@
                       <span class="latestnews__title">Ночные перелёты дешевле!</span>
                     </div>
                     <div class="latestnews__text">
-                      <p class="latestnews__text">
+                      <p>
                         Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам. 
                       </p>
                     </div>
@@ -259,6 +232,7 @@
           </div>
         </div>
       </main>
+
     </div>
     <footer class="footer">
       <div class="container footer__container">
@@ -276,34 +250,6 @@
           <a href="./index.html" class="logo-footer">
             <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
           </a>
-        </div>
-        <div class="footer__col footer__col_last">
-          <div class="socials">
-            <h4 class="socials__title">Наши социальные сети</h4>
-            <ul class="socials__list">
-              <li class="socials__item socials__item--icon--vkontakte ">
-                <a href="#" class="socials__link">
-                    <img src=".\img\icons\social\vk.png" class="socials__avatar-img" alt="icon-vk">
-                </a>
-              </li>
-              <li class="socials__item socials__item--icon--facebook">
-                <a href="#" class="socials__link">
-                  <img src=".\img\icons\social\fb.png" class="socials__avatar-img" alt="icon-fb">
-                </a>
-              </li>
-              <li class="socials__item socials__item--icon--twitter">
-                <a href="#" class="socials__link">
-                  <img src=".\img\icons\social\tw.png" class="socials__avatar-img" alt="icon-tw">
-                </a>
-              </li>
-              <li class="socials__item socials__item--icon--mail">
-                  <a href="#" class="socials__link">
-                    <img src=".\img\icons\social\em.png" class="socials__avatar-img" alt="icon-em">
-                  </a>
-              </li>
-            </ul>
-          
-          </div>
         </div>
       </div>
     </footer>

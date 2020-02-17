@@ -1,0 +1,33 @@
+@font-face {
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.42;
+}
+
+
+/* Шрифты */
+.title {
+  font-size: 49px;
+}
+
+.text__autor {
+  font-weight: 700;
+}
+
+.copyright__link {
+  color: inherit;
+}
+
+.tariffs__title {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.tariffs__cost {
+  font-size: 54px;
+}

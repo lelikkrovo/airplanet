@@ -1,0 +1,31 @@
+.header {
+  /* display: flex;
+  flex-direction: row; */
+  background: #5973b1;
+  color: white;
+  min-height: 77px;
+  margin-bottom: 42px;
+}
+
+/* номер телефона стилизация */
+.contacts__phone {
+  color: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contacts__workhours {
+  text-align: right;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-top: 15px;
+}

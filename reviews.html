@@ -11,69 +11,108 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
 
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./reviews.css">
-  <link rel="stylesheet" href="css/addition.css">
+  <link rel="stylesheet" href="/css/layout/normalize.css">
+  <link rel="stylesheet" href="reviews.css">
+  <link rel="stylesheet" href="addition.css">
+  
 </head>
 
 <body>
   <div class="wrapper">
     <div class="wrapper__content">
       <header class="header">
-        <div class="container">
-          <div class="header__container">
-            <div class="header__left">
-              <a href="./index.html" class="logo">
-                <img src="./img/logo/logo.png" alt="campy logo" class="logo__img">
-      
+        <div class="container header__container">
+          <div class="header__left">
+            <a href="./index.html" class="logo">
+               <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
               </a>
-            </div>
-            <div class="header__right">
-              <address class="contacts">
-                <a href="tel:8800000120230" class="contacts__phone">8 (800) 00-392-10</a>
-                <div class="contacts__workhours">График работы</div>
-              </address>
-            </div>
+          </div>
+          <div class="header__right">
+            <address class="contacts">
+              <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+              <!-- <div class="contacts__workhours">График работы</div>  -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown__link">График работы</a>
+                  <div class="dropdown__menu">
+                    <p class="time1">
+                      пн-вс: 09:00-20:00
+                    </p>
+                    <p class="time2">
+                      обед: 14:00-14:30
+                    </p>
+                  </div>
+                </div>
+            </address>
           </div>
         </div>
       </header>
       <main class="main">
-        <div class="container">
+        <div class="container container__flex">
+          <div class="left__bar">
+            <div class="questions">
+              <div class="background__test">
+                <div class="questions__text">
+                  <p>
+                    Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br>
+                    Для этого можно оставить <a href="#" class="copyright__link">заявку на сайте</a> или же позвонить по номеру<br>
+                    круглосуточной поддержки <a href="tel:8800000120230" class="contacts__phone">8 (800) 00-392-10</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="socials">
+              <h4 class="socials__title">Наши социальные сети</h4>
+              <ul class="socials__list">
+                <li class="socials__item socials__item--icon--vkontakte ">
+                  <a href="#" class="socials__link">
+                      <img src=".\img\icons\social\vk.png" class="socials__avatar-img" alt="icon-vk">
+                  </a>
+                </li>
+                <li class="socials__item socials__item--icon--facebook">
+                  <a href="#" class="socials__link">
+                    <img src=".\img\icons\social\fb.png" class="socials__avatar-img" alt="icon-fb">
+                  </a>
+                </li>
+                <li class="socials__item socials__item--icon--twitter">
+                  <a href="#" class="socials__link">
+                    <img src=".\img\icons\social\tw.png" class="socials__avatar-img" alt="icon-tw">
+                  </a>
+                </li>
+                <li class="socials__item socials__item--icon--mail">
+                    <a href="#" class="socials__link">
+                      <img src=".\img\icons\social\em.png" class="socials__avatar-img" alt="icon-em">
+                    </a>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
+
           <div class="main__container">
             <div class="contant">
-              <aside class="sidebar">
-                <nav class="menu">
-                  <ul class="menu__list">
-                    <li class="menu__item menu__item--icon--main ">
-                      <a href="./index.html" class="menu__link">Главная</a>
-                    </li>
-                    <li class="menu__item menu__item--icon--feed menu__item--active">
-                      <a href="./reviews.html" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="menu__item menu__item--icon--team">
-                      <a href="./team.html" class="menu__link">Экипаж</a>
-                    </li>
-                  </ul>
-                </nav>
-                
-              </aside>
+              
               <div class="reviews">
-                <nav class="breadcrumbs">
-                  <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                      <a href="./index.html" class="breadcrumbs__item--link">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                      <a href="#" class="breadcrumbs__item--link breadcrumbs__link--active">&nbspОтзывы</a>
-                    </li>
-                  </ul>
-                </nav>
+                <aside class="sidebar">
+                  <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__item menu__item--icon--main ">
+                        <a href="./index.html" class="menu__link">Главная</a>
+                      </li>
+                      <li class="menu__item menu__item--icon--feed menu__item--active">
+                        <a href="./reviews.html" class="menu__link">Отзывы</a>
+                      </li>
+                      <li class="menu__item menu__item--icon--team">
+                        <a href="./team.html" class="menu__link">Экипаж</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  
+                </aside>
                 <div class="page-content">
                   <section class="page__reviews">
                     <h1 class="title">Отзывы</h1>
                     <ul class="reviews__list reviews__list--vertical">
                       <li class="reviews__item">
-                        <!-- <div class="reviews__item-wrap"> -->
                           <div class="reviews__image">
                             <div class="reviews__avatar">
                               <img src="./img/reviews/irina.png" alt="" class="reviews__avatar-pic">
@@ -90,10 +129,8 @@
                               </div>
                             </div>
                           </article>
-                        <!-- </div> -->
                       </li>
                       <li class="reviews__item">
-                        <!-- <div class="reviews__item-wrap"> -->
                           <div class="reviews__image">
                             <div class="reviews__avatar">
                               <img src="./img/reviews/alexandr.png" alt="" class="reviews__avatar-pic">
@@ -134,7 +171,6 @@
                         <!-- </div> -->
                       </li>
                       <li class="reviews__item">
-                        <!-- <div class="reviews__item-wrap"> -->
                           <div class="reviews__image">
                             <div class="reviews__avatar">
                               <img src="./img/reviews/anastasia.png" alt="" class="reviews__avatar-pic">
@@ -191,17 +227,7 @@
               </div>
             </div>          
             <div class="container">
-              <div class="questions">
-                <div class="background__test">
-                  <div class="questions__text">
-                    <p>
-                      Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br>
-                      Для этого можно оставить <a href="#" class="copyright__link">заявку на сайте</a> или же позвонить по номеру<br>
-                      круглосуточной поддержки <a href="tel:8800000120230" class="contacts__phone">8 (800) 00-392-10</a>.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div class="container">
               <div class="reviews__form">
@@ -259,50 +285,21 @@
       </main>
     </div>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__container">
-          <div class="footer__col footer__col_first">
-            <p class="footer__copyright">
-              Сделано с любовью и старанием<br>на курсе «HTML + CSS» в 
-              <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.<br>
-              Автор работы: <span class="text__autor">Прохладов Вадим</span> 
-              <!-- верстка: vladimir-kushnerov -->
-            </p>
-  
-          </div>
-          <div class="footer__col footer__col_mid">
-            <a href="./index.html" class="logo-footer">
-              <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
-            </a>
-          </div>
-          <div class="footer__col footer__col_last">
-            <div class="socials">
-              <h4 class="socials__title">Наши социальные сети</h4>
-              <ul class="socials__list">
-                <li class="socials__item  socials__item--icon--vkontakte ">
-                  <a href="#" class="socials__link">
-                      <img src=".\img\icons\social\vk.png" class="socials__avatar-img" alt="icon-vk">
-                  </a>
-                </li>
-                <li class="socials__item socials__item--icon--facebook">
-                  <a href="#" class="socials__link">
-                    <img src=".\img\icons\social\fb.png" class="socials__avatar-img" alt="icon-fb">
-                  </a>
-                </li>
-                <li class="socials__item socials__item--icon--twitter">
-                  <a href="#" class="socials__link">
-                    <img src=".\img\icons\social\tw.png" class="socials__avatar-img" alt="icon-tw">
-                  </a>
-                </li>
-                <li class="socials__item socials__item--icon--mail">
-                    <a href="#" class="socials__link">
-                      <img src=".\img\icons\social\em.png" class="socials__avatar-img" alt="icon-em">
-                    </a>
-                </li>
-              </ul>
-            
-            </div>
-          </div>
+      <div class="container footer__container">
+        <div class="footer__col footer__col_first">
+          <p class="footer__copyright">
+            Сделано с любовью и старанием<br>
+    на курсе «HTML + CSS» в 
+            <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.<br>
+            Автор работы: <span class="text__autor">Прохладов Вадим</span>
+            <!-- верстка: vladimir-kushnerov -->
+          </p>
+
+        </div>
+        <div class="footer__col footer__col_mid">
+          <a href="./index.html" class="logo-footer">
+            <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
+          </a>
         </div>
       </div>
     </footer>

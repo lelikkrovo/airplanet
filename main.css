@@ -1,0 +1,25 @@
+@import url('/css/layout/fonts.css');
+@import url('/css/layout/normalize.css');
+@import url('/css/layout/bace.css');
+
+
+
+@import url('/css/blocks/header.css');
+
+@import url('/css/blocks/content.css');
+@import url('/css/blocks/latestnews.css');
+@import url('/css/blocks/menu.css');
+@import url('/css/blocks/tariffs.css');
+@import url('/css/blocks/pagination.css');
+
+
+
+@import url('/css/blocks/footer.css');
+
+
+/* @import url('/css/blocks/reviews.css') */
+
+
+
+
+

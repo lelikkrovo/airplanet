@@ -1,0 +1,53 @@
+/* footer */
+.footer {
+  /* display: flex;
+  flex-direction: row; */
+  background: #5973b1;
+  color: white;
+  /* min-height: 77px; */
+}
+
+.footer__container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Иконка в иконке соц. сеть */
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #d4ddf2;
+  border-radius: 50%;
+}
+
+.socials__link:hover {
+  background: white; 
+}
+
+.socials__list {
+  display: flex;
+  align-content: space-between;
+}
+
+/* .socials__list {
+  vertical-align: top;
+} */
+
+.socials__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.socials__item {
+  margin-left: 10px;
+}
+
+.socials__item:first-child {
+  margin-left: 0px;
+}

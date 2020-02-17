@@ -1,0 +1,71 @@
+/* tariffs */
+.title__margin {
+  margin-bottom: 70px;
+}
+
+.tariffs__item {
+  border: 1px solid transparent;
+  padding-top: 40px;
+  width: 33%;
+}
+
+.tariffs__item:hover {
+  border: 1px solid #e8e8ec;
+  /* height: 460px; */
+}
+
+/* .tariffs__item {
+  width: 33%;
+} */
+
+.tariffs__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.tariffs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tariffs__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tariffs__avatar {
+  display: flex;
+  width: 68px;
+  height: 68px;
+  background: #5972b1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .tariffs__content-ul-mod {
+  list-style: disc;
+} */
+
+/* стилизация маркировка */
+ .tariffs__content-ul {
+  text-align: left;
+  list-style: disc; 
+  margin-left: 40px;
+} 
+
+.tariffs__text {
+  max-width: 200px;
+} 
+
+
+/* Стилизация доллара */
+.tariffs__cost {
+  display: inline;
+}
+
+.tariffs__cost-mod {
+  font-size: 30px;
+}

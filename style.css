@@ -1,3 +1,4 @@
+/* общее */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -19,6 +20,9 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+
 /* header */
 .header {
   display: flex;
@@ -45,12 +49,6 @@ img {
   opacity: .7;
 }
 
-
-.container {
-  margin: 0 auto;
-  width: 1100px;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -62,34 +60,35 @@ img {
 /* main */
 .main__container {
   display: flex;
-  flex-direction: column;
-  /* flex-direction: row; */
-}
-
-
-.container {
-  display: flex;
   flex-direction: row;
+  /* flex-direction: column; */
 }
 
 .content {
   margin-left: 75px;
 }
 
-.sidebar {
-  display: flex;
-  /* flex-direction: column; */
-  /* width: 300px; */
-}
-
 .airplane__cover-pic {
   display: block;
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+/* in addition */
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1100px;
 }
 
 
 .latestnews {
   margin-bottom: 50px;
 }
+
 
 .latestnews__avatar-frame {
   width: 160px;
@@ -98,13 +97,48 @@ img {
   overflow: hidden;
 }
 
-/* менюшка. отступ */
-.menu__item {
-  margin-bottom: 15px;
+
+.latestnews__list {
+  display: flex;
 }
 
-.menu__item:last-child {
-  margin-bottom: 0px;
+
+.latestnews__date-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.latestnews__date {
+  color: #262424;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+
+
+
+.menu {
+  display: flex;
+}
+
+.menu__list {
+  display: flex; 
+  justify-content: start;
+  align-items:flex-start;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: start;
+}
+
+/* менюшка. отступ */
+.menu__item {
+  margin-left: 35px;
+}
+
+.menu__item:first-child {
+  margin-left: 0px;
 }
 
 .menu__link {
@@ -133,46 +167,44 @@ img {
   flex-direction: row;
 }
 
-
-
 .menu__item--active .menu__link {
   color: black;
 }
 
 .menu__item--icon--main .menu__link:before {
-  background-image: url('./img/icons/menu/main.png');
+  background: url('./img/icons/menu/sprite.png') -96px -48px;
 }
 
 .menu__item--icon--main .menu__link:hover:before {
-  background-image: url('./img/icons/menu/main-hover.png');
+  background: url('./img/icons/menu/sprite.png') -96px -10px;
 }
 
 .menu__item--icon--feed .menu__link:before {
-  background-image: url('./img/icons/menu/feed.png');
+  background: url('./img/icons/menu/sprite.png') -10px -48px;
 }
 
 .menu__item--icon--feed .menu__link:hover:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
+  background: url('./img/icons/menu/sprite.png') -50px -48px;
 }
 
 .menu__item--icon--team .menu__link:before {
-  background-image: url('./img/icons/menu/team.png');
+  background: url('./img/icons/menu/sprite.png') -10px -10px;
 }
 
 .menu__item--icon--team .menu__link:hover:before {
-  background-image: url('./img/icons/menu/team-hover.png');
+  background: url('./img/icons/menu/sprite.png') -53px -10px;
 }
 
 .menu__item--active.menu__item--icon--main .menu__link:before {
-  background-image: url('./img/icons/menu/main-hover.png');
+  background: url('./img/icons/menu/sprite.png') -96px -10px;
 }
 
 .menu__item--active.menu__item--icon--feed .menu__link:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
+  background: url('./img/icons/menu/sprite.png') -50px -48px;
 }
 
 .menu__item--active.menu__item--icon--team .menu__link:before {
-  background-image: url('./img/icons/menu/team-hover.png');
+  background: url('./img/icons/menu/sprite.png') -53px -10px;
 }
 
 
@@ -190,9 +222,14 @@ img {
 }
 
 .tariffs__title {
-  font-size: 11px;
+  font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase;
-  
+}
+
+.tariffs__name {
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .tariffs__cost {
@@ -200,52 +237,27 @@ img {
 }
 
 
-.latestnews__title {
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-}
 
-.title__margin {
+
+/* tariffs */
+.tariffs__title {
   margin-bottom: 70px;
 }
 
 
-.tariffs__item {
-  border: 1px solid transparent;
-  padding-top: 40px;
-}
 
-.tariffs__item:hover {
-  border: 1px solid #e8e8ec;
-  /* height: 460px; */
-}
-
-.tariffs__item {
-  width: 33%;
-}
 
 .tariffs__list {
   display: flex;
   flex-direction: row;
 }
 
-.tariffs__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .tariffs__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
-
-
-/* Тарифы */
 
 .tariffs__avatar {
   display: flex;
@@ -257,27 +269,9 @@ img {
   justify-content: center;
 }
 
-.tariffs__content-ul-mod {
+/* .tariffs__content-ul-mod {
   list-style: disc;
-}
-
-
-/* отступ текста от картинки */
-.latestnews__content {
-  padding-left: 10px;
-}
-
-/* .latestnews__avatar, .latestnews__content{
-  display: inline-block;
 } */
-
-.latestnews__item {
-  border: 1px solid #f9f9f9;
-  border:none 
-  
-}
-
-
 
 /* стилизация маркировка */
  .tariffs__content-ul {
@@ -285,7 +279,6 @@ img {
   list-style: disc; 
   margin-left: 40px;
 } 
-
 
 .tariffs__text {
   max-width: 200px;
@@ -301,25 +294,27 @@ img {
   font-size: 30px;
 }
 
+
 /* pagination */
-/* .pagination {
-  margin-bottom: 65px;
-} */
 .pagination__title {
   font-size: 14px;
   color: #7c7b7b;
   margin-right: 18px;
 }
+
 .pagination__btn {
   text-decoration: none;
   color: #221f1f;
 }
+
 .pagination__btn_prev, .pagination__btn_next {
   margin-right: 9px;
 }
+
 .pagination__btn_active {
   color: #bebdbd;
 }
+
 .pagination__link {
   text-decoration: none;
   width: 25px;
@@ -331,25 +326,23 @@ img {
   color: #221f1f;
   transition: .3s;
 }
+
 .pagination__link:hover {
   color: #ffffff;
   background-color: #5972b1;
   border-radius: 3px;
 }
+
 .pagination__item_active .pagination__link {
   color: #ffffff;
   background-color: #5972b1;
   border-radius: 3px;
 }
+
 .pagination__list, .pagination__controlls, .pagination {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-
-.main {
-  margin-bottom: 60px;
 }
 
 
@@ -362,17 +355,7 @@ img {
   color: white;
   /* min-height: 77px; */
 }
-.footer__container {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}  */
 
-
-
-
-
-/* footer */
 .footer__container {
   display:flex;
   justify-content: space-between;
@@ -394,15 +377,14 @@ img {
   background: white; 
 }
 
-
 .socials__list {
   display: flex;
   align-content: space-between;
 }
 
-.socials__list {
+/* .socials__list {
   vertical-align: top;
-}
+} */
 
 .socials__title {
   margin: 0;
@@ -417,36 +399,133 @@ img {
   margin-left: 0px;
 }
 
-/* Последние новости */
-.latestnews__item {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.latestnews__item {
+
+.latestnews__avatar {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 47px;
 }
-.latestnews__item:last-child {
-  border:none;
+
+.latestnews__title {
+  font-size: 18px;
+  font-weight: 700;
 }
-.latestnews__content {
-  margin-bottom: 30px;
-}
-.latestnews__item {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 30px;
-}
-.latestnews__item:last-child {
-  border:none;
-  margin-bottom: 0px;
-}
-.latestnews__content {
-  width: 644px;
-  height: 164px;
+
+.latestnews__text p {
+  margin: 0px;
+  padding: 0px;
 }
 
 
 
-/* ========== */
 
 
+/* dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer
+}
+
+.dropdown__link {
+  text-align: right;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 700;
+  opacity: .7;
+  color: white;
+}
+
+.dropdown:hover .dropdown__link {
+  color: white; 
+  opacity: 1;
+
+}
+
+.dropdown:hover .dropdown__menu {
+  left: 0;
+  opacity: 1;
+}
+
+
+
+.dropdown__menu {
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  /* padding: 10px; */
+  width: 170px;
+  height: 75px;
+  top: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity .4s;
+  left: -99999px;
+}
+
+.dropdown__menu:before {
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.time1 {
+  display: flex;
+  justify-content: space-around;
+  color: #3a5cbf;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: -10px;
+}
+
+.time2 {
+  display: flex;
+  justify-content: space-around;
+  color: #262424;
+  font-weight: 300;
+}
+
+
+/* треугольник для оформления */
+.triangle {
+  border: 10px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-bottom-color: black;
+  border-top-width: 0px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  position: relative;
+}
+
+.triangle:after {
+  content: "";
+  border: 10px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-bottom-color: rgb(255, 255, 255);
+  border-top-width: 0px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

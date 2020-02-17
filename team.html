@@ -5,68 +5,167 @@
   <meta charset="UTF-8">
   <title>Экипаж</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
 
   <meta name="viewport" content="width=2000, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
 
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./team.css">
-  <link rel="stylesheet" href="css/addition.css">
+  <link rel="stylesheet" href="/css/layout/normalize.css">
+  <link rel="stylesheet" href="/css/layout/addition.css">
+  <link rel="stylesheet" href="/team.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <div class="wrapper__content">
       <header class="header">
-        <div class="container">
-          <div class="header__container">
-            <div class="header__left">
-              <a href="./index.html" class="logo">
-                <img src="./img/logo/logo.png" alt="campy logo" class="logo__img">
+        <div class="container header__container">
+          <div class="header__left">
+            <a href="./index.html" class="logo">
+               <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
               </a>
-            </div>
-            <div class="header__right">
-              <address class="contacts">
-                <a href="tel:8800000120230" class="contacts__phone">8 (800) 00-392-10</a>
-                <div class="contacts__workhours">График работы</div>
-              </address>
-            </div>
+          </div>
+          <div class="header__right">
+            <address class="contacts">
+              <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+              <!-- <div class="contacts__workhours">График работы</div>  -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown__link">График работы</a>
+                  <div class="dropdown__menu">
+                    <p class="time1">
+                      пн-вс: 09:00-20:00
+                    </p>
+                    <p class="time2">
+                      обед: 14:00-14:30
+                    </p>
+                  </div>
+                </div>
+            </address>
           </div>
         </div>
       </header>
       <main class="main">
-        <div class="container">
-          <div class="main__container">
+          <div class="container main__container">
             <div class="contant">
-              <aside class="sidebar">
-                <nav class="menu">
-                  <ul class="menu__list">
-                    <li class="menu__item menu__item--icon--main ">
-                      <a href="./index.html" class="menu__link">Главная</a>
-                    </li>
-                    <li class="menu__item menu__item--icon--feed">
-                      <a href="./reviews.html" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="menu__item menu__item--icon--team menu__item--active">
-                      <a href="./team.html" class="menu__link">Экипаж</a>
-                    </li>
-                  </ul>
-                </nav>
+              <div class="sidebar__left">
+                <div class="partners">
+                  <section class="page__partners">
+                    <h1 class="title">Партнёры</h1>
+                    <ul class="partners__list">
+                      <li class="partners__item">
+                        <!-- <div class="team__item-wrap"> -->
+                          <div class="partners__image">
+                            <div class="partners__avatar">
+                              <img src="./img/partners/logo-1.png" alt="" class="partners__avatar-pic">
+                            </div>
+                          </div>
+                        <!-- </div> -->
+                      </li>
+                      <li class="partners__item">
+                        <!-- <div class="team__item-wrap"> -->
+                          <div class="partners__image">
+                            <div class="partners__avatar">
+                              <img src="./img/partners/logo-2.png" alt="" class="partners__avatar-pic">
+                            </div>
+                          </div>
+                        <!-- </div> -->
+                      </li>
+                      <li class="partners__item">
+                        <!-- <div class="team__item-wrap"> -->
+                          <div class="partners__image">
+                            <div class="partners__avatar">
+                              <img src="./img/partners/logo-3.png" alt="" class="partners__avatar-pic">
+                            </div>
+                          </div>
+                        <!-- </div> -->
+                      </li>
+                      <li class="partners__item">
+                        <!-- <div class="team__item-wrap"> -->
+                          <div class="partners__image">
+                            <div class="partners__avatar">
+                              <img src="./img/partners/logo-4.png" alt="" class="partners__avatar-pic">
+                            </div>
+                          </div>
+                        <!-- </div> -->
+                      </li>
+                      <li class="partners__item">
+                        <!-- <div class="team__item-wrap"> -->
+                          <div class="partners__image">
+                            <div class="partners__avatar">
+                              <img src="./img/partners/logo-5.png" alt="" class="partners__avatar-pic">
+                            </div>
+                          </div>
+                        <!-- </div> -->
+                      </li>
+                      <li class="partners__item">
+                        <!-- <div class="team__item-wrap"> -->
+                          <div class="partners__image">
+                            <div class="partners__avatar">
+                              <img src="./img/partners/logo-6.png" alt="" class="partners__avatar-pic">
+                            </div>
+                          </div>
+                        <!-- </div> -->
+                      </li>
+                    </ul>
+                  </section>
+  
+                </div>
                 
-              </aside>
+              
+                <div class="footer__col footer__col_last">
+                  <div class="socials">
+                    <h4 class="socials__title">Наши социальные сети</h4>
+                    <ul class="socials__list">
+                      <li class="socials__item socials__item--icon--vkontakte ">
+                        <a href="#" class="socials__link">
+                            <img src=".\img\icons\social\vk.png" class="socials__avatar-img" alt="icon-vk">
+                        </a>
+                      </li>
+                      <li class="socials__item socials__item--icon--facebook">
+                        <a href="#" class="socials__link">
+                          <img src=".\img\icons\social\fb.png" class="socials__avatar-img" alt="icon-fb">
+                        </a>
+                      </li>
+                      <li class="socials__item socials__item--icon--twitter">
+                        <a href="#" class="socials__link">
+                          <img src=".\img\icons\social\tw.png" class="socials__avatar-img" alt="icon-tw">
+                        </a>
+                      </li>
+                      <li class="socials__item socials__item--icon--mail">
+                          <a href="#" class="socials__link">
+                            <img src=".\img\icons\social\em.png" class="socials__avatar-img" alt="icon-em">
+                          </a>
+                      </li>
+                    </ul>
+                  
+                  </div>
+                </div>
+
+              </div>
+              
+              
               <div class="team">
-                <nav class="breadcrumbs">
-                  <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                      <a href="./index.html" class="breadcrumbs__item--link">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                      <a href="#" class="breadcrumbs__item--link breadcrumbs__link--active">&nbspЭкипаж</a>
-                    </li>
-                  </ul>
-                </nav>
+                <aside class="sidebar">
+                  <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__item menu__item--icon--main ">
+                        <a href="./index.html" class="menu__link">Главная</a>
+                      </li>
+                      <li class="menu__item menu__item--icon--feed">
+                        <a href="./reviews.html" class="menu__link">Отзывы</a>
+                      </li>
+                      <li class="menu__item menu__item--icon--team menu__item--active">
+                        <a href="./team.html" class="menu__link">Экипаж</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  
+                
+                
+                </aside>
                 <div class="page-content">
                   <section class="page__team">
                     <h1 class="title">Экипаж</h1>
@@ -203,120 +302,29 @@
                     </div>
                   </section>
                 </div>
-                <div class="partners">
-                  <section class="page__partners">
-                    <h1 class="title">Партнёры</h1>
-                    <ul class="partners__list">
-                      <li class="partners__item">
-                        <!-- <div class="team__item-wrap"> -->
-                          <div class="partners__image">
-                            <div class="partners__avatar">
-                              <img src="./img/partners/logo-1.png" alt="" class="partners__avatar-pic">
-                            </div>
-                          </div>
-                        <!-- </div> -->
-                      </li>
-                      <li class="partners__item">
-                        <!-- <div class="team__item-wrap"> -->
-                          <div class="partners__image">
-                            <div class="partners__avatar">
-                              <img src="./img/partners/logo-2.png" alt="" class="partners__avatar-pic">
-                            </div>
-                          </div>
-                        <!-- </div> -->
-                      </li>
-                      <li class="partners__item">
-                        <!-- <div class="team__item-wrap"> -->
-                          <div class="partners__image">
-                            <div class="partners__avatar">
-                              <img src="./img/partners/logo-3.png" alt="" class="partners__avatar-pic">
-                            </div>
-                          </div>
-                        <!-- </div> -->
-                      </li>
-                      <li class="partners__item">
-                        <!-- <div class="team__item-wrap"> -->
-                          <div class="partners__image">
-                            <div class="partners__avatar">
-                              <img src="./img/partners/logo-4.png" alt="" class="partners__avatar-pic">
-                            </div>
-                          </div>
-                        <!-- </div> -->
-                      </li>
-                      <li class="partners__item">
-                        <!-- <div class="team__item-wrap"> -->
-                          <div class="partners__image">
-                            <div class="partners__avatar">
-                              <img src="./img/partners/logo-5.png" alt="" class="partners__avatar-pic">
-                            </div>
-                          </div>
-                        <!-- </div> -->
-                      </li>
-                      <li class="partners__item">
-                        <!-- <div class="team__item-wrap"> -->
-                          <div class="partners__image">
-                            <div class="partners__avatar">
-                              <img src="./img/partners/logo-6.png" alt="" class="partners__avatar-pic">
-                            </div>
-                          </div>
-                        <!-- </div> -->
-                      </li>
-                    </ul>
-                  </section>
-  
-                </div>
+                
               </div>
             </div>          
           </div>    
-        </div>
       </main>
     </div>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__container">
-          <div class="footer__col footer__col_first">
-            <p class="footer__copyright">
-              Сделано с любовью и старанием<br>на курсе «HTML + CSS» в 
-              <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.<br>
-              Автор работы: <span class="text__autor">Прохладов Вадим</span> 
-              <!-- верстка: vladimir-kushnerov -->
-            </p>
-  
-          </div>
-          <div class="footer__col footer__col_mid">
-            <a href="./index.html" class="logo-footer">
-              <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
-            </a>
-          </div>
-          <div class="footer__col footer__col_last">
-            <div class="socials">
-              <h4 class="socials__title">Наши социальные сети</h4>
-              <ul class="socials__list">
-                <li class="socials__item  socials__item--icon--vkontakte ">
-                  <a href="#" class="socials__link">
-                      <img src=".\img\icons\social\vk.png" class="socials__avatar-img" alt="icon-vk">
-                  </a>
-                </li>
-                <li class="socials__item socials__item--icon--facebook">
-                  <a href="#" class="socials__link">
-                    <img src=".\img\icons\social\fb.png" class="socials__avatar-img" alt="icon-fb">
-                  </a>
-                </li>
-                <li class="socials__item socials__item--icon--twitter">
-                  <a href="#" class="socials__link">
-                    <img src=".\img\icons\social\tw.png" class="socials__avatar-img" alt="icon-tw">
-                  </a>
-                </li>
-                <li class="socials__item socials__item--icon--mail">
-                    <a href="#" class="socials__link">
-                      <img src=".\img\icons\social\em.png" class="socials__avatar-img" alt="icon-em">
-                    </a>
-                </li>
-              </ul>
-            
-            </div>
-          </div>
+      <div class="container footer__container">
+        <div class="footer__col footer__col_first">
+          <p class="footer__copyright">
+            Сделано с любовью и старанием<br>
+    на курсе «HTML + CSS» в 
+            <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.<br>
+            Автор работы: <span class="text__autor">Прохладов Вадим</span>
+            <!-- верстка: vladimir-kushnerov -->
+          </p>
+
         </div>
+        <div class="footer__col footer__col_mid">
+          <a href="./index.html" class="logo-footer">
+            <img src="./img/logo/logo.png" class="logo__img" alt="air-planet-img">
+          </a>
+        
       </div>
     </footer>
   </div>
