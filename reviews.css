@@ -259,39 +259,39 @@ img {
 }
 
 .menu__item--icon--main .menu__link:before {
-  background: url('/img/icons/menu/sprite.png') -96px -48px;
+  background: url('./img/icons/menu/sprite.png') -96px -48px;
 }
 
 .menu__item--icon--main .menu__link:hover:before {
-  background: url('/img/icons/menu/sprite.png') -96px -10px;
+  background: url('./img/icons/menu/sprite.png') -96px -10px;
 }
 
 .menu__item--icon--feed .menu__link:before {
-  background: url('/img/icons/menu/sprite.png') -10px -48px;
+  background: url('./img/icons/menu/sprite.png') -10px -48px;
 }
 
 .menu__item--icon--feed .menu__link:hover:before {
-  background: url('/img/icons/menu/sprite.png') -50px -48px;
+  background: url('./img/icons/menu/sprite.png') -50px -48px;
 }
 
 .menu__item--icon--team .menu__link:before {
-  background: url('/img/icons/menu/sprite.png') -10px -10px;
+  background: url('./img/icons/menu/sprite.png') -10px -10px;
 }
 
 .menu__item--icon--team .menu__link:hover:before {
-  background: url('/img/icons/menu/sprite.png') -53px -10px;
+  background: url('./img/icons/menu/sprite.png') -53px -10px;
 }
 
 .menu__item--active.menu__item--icon--main .menu__link:before {
-  background: url('/img/icons/menu/sprite.png') -96px -10px;
+  background: url('./img/icons/menu/sprite.png') -96px -10px;
 }
 
 .menu__item--active.menu__item--icon--feed .menu__link:before {
-  background: url('/img/icons/menu/sprite.png') -50px -48px;
+  background: url('./img/icons/menu/sprite.png') -50px -48px;
 }
 
 .menu__item--active.menu__item--icon--team .menu__link:before {
-  background: url('/img/icons/menu/sprite.png') -53px -10px;
+  background: url('./img/icons/menu/sprite.png') -53px -10px;
 }
 
 /* иконси соц. сети */
@@ -375,7 +375,7 @@ img {
 }
 
 .questions {
-  background-image: url(/img/comments/pattern.png);
+  background-image: url(./img/comments/pattern.png);
 }
 
 
@@ -528,7 +528,7 @@ img {
 }
 
 .btn--white:before {
-  background-image: url('/img/icons/btn/vector-smart.png');
+  background-image: url('./img/icons/btn/vector-smart.png');
 }
 
 .switch-controls__elem {
@@ -541,9 +541,9 @@ img {
 
 
 
-.container__flex {
+/* .container__flex {
   display: flex;
-}
+} */
 
 
 
