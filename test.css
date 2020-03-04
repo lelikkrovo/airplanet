@@ -1,4 +1,4 @@
-/* Здесь просто красный треугольник
+Здесь просто красный треугольник
 .triangle {
   border: 10px solid transparent;
   width: 0px;
@@ -8,19 +8,18 @@
   border-left-width: 8px;
   border-right-width: 8px;
   position: relative;
-} */
+}
 
 
 
 
 
-.triangle {
+/* .triangle {
   width: 80px;
   height: 155px;
   position: relative;
   overflow: hidden;
 }
-
 
 .triangle:before {
   content: "";
@@ -34,7 +33,6 @@
   left: -50px;
 }
 
-
 .triangle:after {
   content: "";
   width: 100px;
@@ -45,7 +43,7 @@
   position: absolute;
   top: 30px;
   left: -50px;
-}
+} */
 
 
 .menu {

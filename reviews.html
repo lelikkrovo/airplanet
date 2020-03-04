@@ -19,7 +19,7 @@
 
 <body>
   <div class="wrapper">
-    <div class="wrapper__content">
+    <section class="wrapper__content">
       <header class="header">
         <div class="container header__container">
           <div class="header__left">
@@ -47,10 +47,10 @@
         </div>
       </header>
       <main class="main">
-        <div class="container container__flex">
-          <div class="left__bar">
+        <div class="container main__container">
+          <aside class="sidebar">
             <div class="questions">
-              <div class="background__test">
+              <div class="questions__item">
                 <div class="questions__text">
                   <p>
                     Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br>
@@ -86,201 +86,183 @@
               </ul>
             
             </div>
+          </aside>
+          <div class="content">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--icon--main ">
+                  <a href="./index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item menu__item--icon--feed menu__item--active">
+                  <a href="./reviews.html" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item menu__item--icon--team">
+                  <a href="./team.html" class="menu__link">Экипаж</a>
+                </li>
+              </ul>
+            </nav>
+            <section class="reviews">
+              <h2 class="title">Отзывы</h2> 
+              <ul class="reviews__list reviews__list--vertical">
+                <li class="reviews__item">
+                    <div class="reviews__image">
+                      <div class="reviews__avatar">
+                        <img src="./img/reviews/irina.png" alt="" class="reviews__avatar-pic">
+                      </div>
+                    </div>
+                    <article class="reviews__text">
+                      <time class="reviews__data">12.10.2016</time>
+                      <h3 class="reviews__name">Ирина Паламарчук</h3>
+                      <div class="reviews__content">
+                        <div class="reviews__content-text">
+                          <p>
+                            Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__image">
+                      <div class="reviews__avatar">
+                        <img src="./img/reviews/alexandr.png" alt="" class="reviews__avatar-pic">
+                        
+                      </div>
+                    </div>
+                    <article class="reviews__text">
+                      <time class="reviews__data">01.02.2016</time>
+                      <h3 class="reviews__name">Александр Бельков</h3>
+                      <div class="reviews__content">
+                        <div class="reviews__content-text">
+                          <p>
+                          Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  <!-- </div> -->
+                </li>
+                <li class="reviews__item">
+                  <!-- <div class="reviews__item-wrap"> -->
+                    <div class="reviews__image">
+                      <div class="reviews__avatar">
+                        <img src="./img/reviews/igor.png" alt="" class="reviews__avatar-pic">
+                      </div>
+                    </div>
+                    <article class="reviews__text">
+                      <time class="reviews__data">22.12.2015</time>
+                      <h3 class="reviews__name">Игорь Николаенко</h3>
+                      <div class="reviews__content">
+                        <div class="reviews__content-text">
+                          <p>
+                            Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались. Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  <!-- </div> -->
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__image">
+                      <div class="reviews__avatar">
+                        <img src="./img/reviews/anastasia.png" alt="" class="reviews__avatar-pic">
+                      </div>
+                    </div>
+                    <article class="reviews__text">
+                      <time class="reviews__data">14.08.2015</time>
+                      <h3 class="reviews__name">Анастасия Порядная</h3>
+                      <div class="reviews__content">
+                        <div class="reviews__content-text">
+                          <p>
+                            За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет! Рекомендую!
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  <!-- </div> -->
+                </li>
+              </ul>
+              <section class="desc">
+                <div class="pagination">
+                  <span class="pagination__display pagination__title">Страница 1 из 7</span>
+                  <div class="pagination__controlls">
+                    <a href="#" class="pagination__btn pagination__btn_prev pagination__btn_active"><</a> 
+                    <ul class="pagination__list">
+                      <li class="pagination__item pagination__item_active">
+                        <a href="#" class="pagination__link">1</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">2</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">6</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a href="#" class="pagination__link">7</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="pagination__btn pagination__btn_next">></a>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <div class="reviews__form">
+              <div class="form">
+                <div class="form__title">Оставить отзыв</div> 
+                <form class="form__element">
+                  <div class="form__content">
+                    <div class="form_row">
+                      <label class="form__block">
+                      <div class="form__elem-title">Ваше имя</div> 
+                      <input type="text" class="form__input" placeholder="Андрей">
+                      </label>
+                      <label class="form__block">
+                        <div class="form__elem-title">Ссылка на профиль в VK</div> 
+                        <input type="text" class="form__input" placeholder="vk.com/example">
+                      </label>
+                    </div>
+                    <div class="form_row">
+                      <label class="form__block">
+                      <div class="form__elem-title">Текст отзыва</div> 
+                        <textarea class="form__input form__input--textarea" placeholder="Мне понравилось"></textarea>
+                      </label>
+                    </div>
+                    <div class="form__buttons-row">
+                      <div class="switch-controls">
+                        <div class="switch-controls__title">Отоброжать фото в отзыве?</div>
+                        <div class="switch-controls__buttons">
+                          <lebel class="switch-controls__elem">
+                            <input type="radio" name="" id="" class="switch-controls__radio">
+                            <div class="switch-controls__elem-title">Да</div>
+                          </lebel>
+                          <lebel class="switch-controls__elem switch-controls__right">
+                            <input type="radio" name="" id="" class="switch-controls__radio">
+                            <div class="switch-controls__elem-title">Нет</div>
+                          </lebel>
+                        </div>
+                      </div>
+                      <div class="form__buttons">
+                        <button type="rest" class="btn btn--white">
+                          Отправить
+                        </button>
+                        <!-- <input type="submit" class="btn" value="текст"> -->
+                      </div>
+                    </div>
+                    
+                  </div>
+                </form>
+              </div>
           </div>
-
-          <!-- <div class="main__container"> -->
-            <div class="contant">
-              
-              <div class="reviews">
-                <aside class="sidebar">
-                  <nav class="menu">
-                    <ul class="menu__list">
-                      <li class="menu__item menu__item--icon--main ">
-                        <a href="./index.html" class="menu__link">Главная</a>
-                      </li>
-                      <li class="menu__item menu__item--icon--feed menu__item--active">
-                        <a href="./reviews.html" class="menu__link">Отзывы</a>
-                      </li>
-                      <li class="menu__item menu__item--icon--team">
-                        <a href="./team.html" class="menu__link">Экипаж</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  
-                </aside>
-                <div class="page-content">
-                  <section class="page__reviews">
-                    <h1 class="title">Отзывы</h1>
-                    <ul class="reviews__list reviews__list--vertical">
-                      <li class="reviews__item">
-                          <div class="reviews__image">
-                            <div class="reviews__avatar">
-                              <img src="./img/reviews/irina.png" alt="" class="reviews__avatar-pic">
-                            </div>
-                          </div>
-                          <article class="reviews__text">
-                            <time class="reviews__data">12.10.2016</time>
-                            <h3 class="reviews__name">Ирина Паламарчук</h3>
-                            <div class="reviews__content">
-                              <div class="reviews__content-text">
-                                <p>
-                                  Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
-                                </p>
-                              </div>
-                            </div>
-                          </article>
-                      </li>
-                      <li class="reviews__item">
-                          <div class="reviews__image">
-                            <div class="reviews__avatar">
-                              <img src="./img/reviews/alexandr.png" alt="" class="reviews__avatar-pic">
-                              
-                            </div>
-                          </div>
-                          <article class="reviews__text">
-                            <time class="reviews__data">01.02.2016</time>
-                            <h3 class="reviews__name">Александр Бельков</h3>
-                            <div class="reviews__content">
-                              <div class="reviews__content-text">
-                                <p>
-                                Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2 раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.
-                                </p>
-                              </div>
-                            </div>
-                          </article>
-                        <!-- </div> -->
-                      </li>
-                      <li class="reviews__item">
-                        <!-- <div class="reviews__item-wrap"> -->
-                          <div class="reviews__image">
-                            <div class="reviews__avatar">
-                              <img src="./img/reviews/igor.png" alt="" class="reviews__avatar-pic">
-                            </div>
-                          </div>
-                          <article class="reviews__text">
-                            <time class="reviews__data">22.12.2015</time>
-                            <h3 class="reviews__name">Игорь Николаенко</h3>
-                            <div class="reviews__content">
-                              <div class="reviews__content-text">
-                                <p>
-                                  Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5 часов. Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались. Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
-                                </p>
-                              </div>
-                            </div>
-                          </article>
-                        <!-- </div> -->
-                      </li>
-                      <li class="reviews__item">
-                          <div class="reviews__image">
-                            <div class="reviews__avatar">
-                              <img src="./img/reviews/anastasia.png" alt="" class="reviews__avatar-pic">
-                            </div>
-                          </div>
-                          <article class="reviews__text">
-                            <time class="reviews__data">14.08.2015</time>
-                            <h3 class="reviews__name">Анастасия Порядная</h3>
-                            <div class="reviews__content">
-                              <div class="reviews__content-text">
-                                <p>
-                                  За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет! Рекомендую!
-                                </p>
-                              </div>
-                            </div>
-                          </article>
-                        <!-- </div> -->
-                      </li>
-                    </ul>
-                  </section>
-                  <section class="desc">
-                    <div class="pagination">
-                      <span class="pagination__display pagination__title">Страница 1 из 7</span>
-                      <div class="pagination__controlls">
-                        <a href="#" class="pagination__btn pagination__btn_prev pagination__btn_active"><</a> 
-                        <ul class="pagination__list">
-                          <li class="pagination__item pagination__item_active">
-                            <a href="#" class="pagination__link">1</a>
-                          </li>
-                          <li class="pagination__item">
-                            <a href="#" class="pagination__link">2</a>
-                          </li>
-                          <li class="pagination__item">
-                            <a href="#" class="pagination__link">3</a>
-                          </li>
-                          <li class="pagination__item">
-                            <a href="#" class="pagination__link">4</a>
-                          </li>
-                          <li class="pagination__item">
-                            <a href="#" class="pagination__link">5</a>
-                          </li>
-                          <li class="pagination__item">
-                            <a href="#" class="pagination__link">6</a>
-                          </li>
-                          <li class="pagination__item">
-                            <a href="#" class="pagination__link">7</a>
-                          </li>
-                        </ul>
-                        <a href="#" class="pagination__btn pagination__btn_next">></a>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>          
-            <div class="container">
-              
-            </div>
-            <div class="container">
-              <div class="reviews__form">
-
-                <div class="form">
-                  <div class="form__title">Оставить отзыв</div> 
-                  <form class="form__element">
-                    <div class="form__content">
-                      <div class="form_row">
-                        <label class="form__block">
-                        <div class="form__elem-title">Ваше имя</div> 
-                        <input type="text" class="form__input" placeholder="Андрей">
-                        </label>
-                        <label class="form__block">
-                          <div class="form__elem-title">Ссылка на профиль в VK</div> 
-                          <input type="text" class="form__input" placeholder="vk.com/example">
-                        </label>
-                      </div>
-                      <div class="form_row">
-                        <label class="form__block">
-                        <div class="form__elem-title">Текст отзыва</div> 
-                          <textarea class="form__input form__input--textarea" placeholder="Мне понравилось"></textarea>
-                        </label>
-                      </div>
-                      <div class="form__buttons-row">
-                        <div class="switch-controls">
-                          <div class="switch-controls__title">Отоброжать фото в отзыве?</div>
-                          <div class="switch-controls__buttons">
-                            <lebel class="switch-controls__elem">
-                              <input type="radio" name="" id="" class="switch-controls__radio">
-                              <div class="switch-controls__elem-title">Да</div>
-                            </lebel>
-                            <lebel class="switch-controls__elem switch-controls__right">
-                              <input type="radio" name="" id="" class="switch-controls__radio">
-                              <div class="switch-controls__elem-title">Нет</div>
-                            </lebel>
-                          </div>
-                        </div>
-                        <div class="form__buttons">
-                          <button type="rest" class="btn btn--white">
-                            Отправить
-                          </button>
-                          <!-- <input type="submit" class="btn" value="текст"> -->
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </form>
-                </div>
-
-              </div>
-            </div>
-          <!-- </div>     -->
+          </div>
         </div>
       </main>
     </div>
